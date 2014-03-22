@@ -9,7 +9,9 @@ var express = require('express'),
 
 app.use(express.logger("dev"));
 app.use(express.methodOverride());
-app.use(express.bodyParser());
+//app.use(express.bodyParser());
+app.use(express.json());
+app.use(express.urlencoded());
 app.use(app.router);
 
 function sign(req, res, next) {
