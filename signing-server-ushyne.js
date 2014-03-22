@@ -38,6 +38,6 @@ function sign(req, res, next) {
 // DON'T FORGET TO SECURE THIS ENDPOINT WITH APPROPRIATE AUTHENTICATION/AUTHORIZATION MECHANISM
 app.post('/signing', sign);
 
-app.listen(80, function () {
-    console.log('Server listening on port 80');
+app.listen(3000, function () {
+    console.log('Server listening on port 3000');
 });
