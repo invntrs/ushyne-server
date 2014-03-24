@@ -26,7 +26,7 @@ function sign(req, res, next) {
             {"key": fileName},
             {"acl": 'public-read'},
             ["starts-with", "$Content-Type", ""],
-            ["content-length-range", 0, 419430400]
+            ["content-length-range", 0, 5242880000]
         ]};
 
     policyBase64 = new Buffer(JSON.stringify(policy), 'utf8').toString('base64');
